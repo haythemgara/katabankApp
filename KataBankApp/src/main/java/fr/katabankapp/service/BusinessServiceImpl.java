@@ -1,25 +1,22 @@
 package fr.katabankapp.service;
 
-import fr.katabankapp.entites.Account;
+import fr.katabankapp.entities.Account;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Implementation of Business Service
+ * @author Haythem
+ */
 public class BusinessServiceImpl implements BusinessService {
 
-    //to call operations (deposit, retrive, history)
-    OperationService operationService= new OperationServiceImpl();
-
-    /**
-     *
-     * @param account
-     * @exception InputMismatchException
-     */
     @Override
     public void processing(Account account) {
 
+        //to call operations (deposit, retrive, history)
+        OperationService operationService= new OperationServiceImpl();
         try {
-
             Scanner sc = new Scanner(System.in);
             int operation;
 
@@ -27,7 +24,6 @@ public class BusinessServiceImpl implements BusinessService {
                 System.out.println("Please choose an operation : ");
 
                 operation = sc.nextInt();
-
                 switch (operation) {
                     case 1: { //deposit
                         System.out.println("Introduce the amount to save ");

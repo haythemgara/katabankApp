@@ -1,9 +1,13 @@
-package fr.katabankapp.entites;
+package fr.katabankapp.entities;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * Account entity
+ * @author Haythem
+ */
 public class Account implements Serializable{
 
 

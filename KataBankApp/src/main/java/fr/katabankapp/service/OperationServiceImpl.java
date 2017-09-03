@@ -1,19 +1,18 @@
 package fr.katabankapp.service;
 
-import fr.katabankapp.entites.Account;
-import fr.katabankapp.entites.Operation;
+import fr.katabankapp.entities.Account;
+import fr.katabankapp.entities.Operation;
 
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * Impl Service of operation
+ * @author Haythem
+ */
 public class OperationServiceImpl implements OperationService {
 
-    /**
-     *
-     * @param account
-     * @param amount
-     * @return boolean
-     */
+
     @Override
     public boolean deposit(Account account, double amount) {
 
@@ -42,12 +41,6 @@ public class OperationServiceImpl implements OperationService {
 
     }
 
-    /**
-     *
-     * @param account
-     * @param amount
-     * @return boolean
-     */
     @Override
     public boolean retrive(Account account, double amount) {
 
@@ -75,10 +68,7 @@ public class OperationServiceImpl implements OperationService {
         }
     }
 
-    /**
-     *
-     * @param account
-     */
+
     @Override
     public void history(Account account) {
         List<Operation> allOperations = account.getOperations();

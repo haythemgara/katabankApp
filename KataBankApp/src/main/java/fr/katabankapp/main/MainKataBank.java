@@ -1,20 +1,21 @@
 package fr.katabankapp.main;
 
-import fr.katabankapp.entites.Account;
-import fr.katabankapp.entites.Operation;
-import fr.katabankapp.entites.User;
+import fr.katabankapp.entities.Account;
+import fr.katabankapp.entities.Operation;
+import fr.katabankapp.entities.User;
 import fr.katabankapp.service.BusinessService;
 import fr.katabankapp.service.BusinessServiceImpl;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+/**
+ * main class for KataBank application
+ * @author Haythem
+ */
 public class MainKataBank {
 
     public static void main(String[] args) {
-
-        // instanciate the service
-        BusinessService businessService= new BusinessServiceImpl();
 
         // Create a user
         User user= new User();
@@ -41,6 +42,8 @@ public class MainKataBank {
         System.out.println("3 : To see the history of your operations. ");
         System.out.println("0 : To exit. ");
 
+        // instanciate the service
+        BusinessService businessService= new BusinessServiceImpl();
         // doing operations
         businessService.processing(account);
 

@@ -1,7 +1,11 @@
-package fr.katabankapp.entites;
+package fr.katabankapp.entities;
 
 import java.io.Serializable;
 
+/**
+ * User entity
+ * @author Haythem
+ */
 public class User implements Serializable{
 
     private String firstName;
