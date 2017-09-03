@@ -3,7 +3,7 @@ package fr.katabankapp.service;
 import fr.katabankapp.entities.Account;
 
 /**
- * Interface of Business Service
+ * Business Service Interface
  * @author Haythem
  */
 public interface BusinessService {

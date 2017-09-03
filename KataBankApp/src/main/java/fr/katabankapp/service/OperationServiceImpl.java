@@ -36,6 +36,8 @@ public class OperationServiceImpl implements OperationService {
 
             //save operation in account history
             account.getOperations().add(operation);
+
+            System.out.println(amount+" €  has been deposited successfully !");
             return true;
         }
 
@@ -63,6 +65,8 @@ public class OperationServiceImpl implements OperationService {
 
             //save operation in account history
             account.getOperations().add(operation);
+
+            System.out.println(amount+" € was successfully withdrawn ! ");
 
             return true;
         }
