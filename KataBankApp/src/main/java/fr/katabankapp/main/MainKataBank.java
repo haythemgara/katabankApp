@@ -44,7 +44,7 @@ public class MainKataBank {
         // doing operations
         businessService.processing(account);
 
-        
+
     }
 
 }
