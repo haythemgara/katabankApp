@@ -4,6 +4,7 @@ import fr.katabankapp.entities.Account;
 
 /**
  * Business Service Interface
+ *
  * @author Haythem
  */
 public interface BusinessService {
@@ -11,7 +12,8 @@ public interface BusinessService {
 
     /**
      * Method for processing operation
-     * @param account
+     *
+     * @param account the account to manage
      */
     public void processing(Account account);
 }

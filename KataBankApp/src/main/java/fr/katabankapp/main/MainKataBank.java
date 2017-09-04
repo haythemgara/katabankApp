@@ -37,10 +37,10 @@ public class MainKataBank {
         // main
         System.out.println("* * * * KATA BANK * * * * ");
         System.out.println("* * * * WELCOME  " +user.getLastName()+" "+user.getFirstName() + "  * * * *");
-        System.out.println("1 : To make a deposit in your account. ");
-        System.out.println("2 : To make a withdrawal from your account. ");
-        System.out.println("3 : To see the history of your operations. ");
-        System.out.println("0 : To exit. ");
+        System.out.println("    1 : To make a deposit in your account. ");
+        System.out.println("    2 : To make a withdrawal from your account. ");
+        System.out.println("    3 : To see the history of your operations. ");
+        System.out.println("    0 : To exit. ");
 
         // instanciate the service
         BusinessService businessService= new BusinessServiceImpl();

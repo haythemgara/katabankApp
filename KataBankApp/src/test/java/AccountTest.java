@@ -1,6 +1,7 @@
 import fr.katabankapp.entities.Account;
 import fr.katabankapp.entities.Operation;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -12,11 +13,20 @@ import java.util.ArrayList;
  */
 public class AccountTest {
 
-    @Test
-    public void testAccount(){
+    /**
+     * Instance of Account
+     * @see Account
+     */    private Account account;
 
-        // Create an account.
-        Account account= new Account();
+
+    @Before //testing the instantiation of an Account object
+    public void initializeTest(){
+        account= new Account();
+        Assert.assertNotNull(account);
+    }
+
+    @Test //Testing if the Account is not empty
+    public void testAccount(){
         account.setAccountNumber("001");
         account.setBalance(0);
         account.setOpeningDate(LocalDate.of(2011,3,25));
